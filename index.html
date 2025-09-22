@@ -39,7 +39,7 @@
   </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
     <nav class="bg-blue-950 text-white p-4 py-8">
         <div class="container mx-auto flex items-center justify-between">
@@ -406,7 +406,164 @@
     </div>
     </section>
 
+    <!-- CONTACT SECTION -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex md:gap-8">
+                <!-- Contact Form Section -->
+                <div class="w-full md:w-1/2 p-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Contact us</h2>
+                    <form>
+                        <div class="mb-6">
+                            <input type="text" id="name" placeholder="please enter your name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" id="email" placeholder="please enter your email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="message" rows="4" placeholder="Please describe your message" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-950 text-white font-semibold py-4 hover:bg-red-700 transition-colors duration-300">
+                            Submit message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Google Maps Embed Section -->
+                <div class="w-full md:w-1/2">
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8514018002584!2d36.837005875873466!3d-1.2614347356013345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1718d5602df3%3A0x7c1568bec5ddb034!2sOilibya%20Plaza%20-%20Muthaiga!5e0!3m2!1sen!2ske!4v1758497492690!5m2!1sen!2ske"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="bg-gray-200 py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <p class="text-gray-700 text-lg md:text-xl">
+                        Subscribe now and receive a weekly newsletter with educational materials, new courses, interesting posts, popular books, and much more!
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex items-center">
+                    <input type="email" placeholder="Your email here" class="flex-grow p-4 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-950 text-white font-semibold py-4 px-8 rounded-r-lg hover:bg-red-800 transition-colors duration-300">
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-8 px-4">
+    <div class="container mx-2 md:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12  pb-12">
+        
+        <div class="flex flex-col items-start">
+            <a href="#">
+            <img src="Assets/images/Neowell_footer_logo.png" alt="Neowell Real Estate Logo" class="h-16 mb-4">
+            </a>
+            <div class="flex items-center space-x-2 mb-2">
+            <img src="Assets/images/phone-svg.svg" class="w-5 h-5" alt="phone">
+            <p class="text-sm">+254 769 049 387</p>
+            </div>
+            <div class="flex items-center space-x-2 mb-4">
+            <img src="Assets/images/email-svg.svg" class="w-5 h-5" alt="mail">
+            <p class="text-sm">info@neowell.africa</p>
+            </div>
+            <div class="flex space-x-2 bg-white p-2">
+                <a href="#">
+                    <img src="Assets/images/facebook-svg.svg" 
+                        class="w-5 h-5 " alt="Facebook">
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="#">
+                    <img src="Assets/images/whatsapp-svg.svg" 
+                        class="w-5 h-5 " alt="WhatsApp">
+                </a>
+
+                <!-- Instagram -->
+                <a href="#">
+                    <img src="Assets/images/instagram-svg.svg" 
+                        class="w-5 h-5 " alt="Instagram">
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="#">
+                    <img src="Assets/images/linkedin-svg.svg" 
+                        class="w-5 h-5 " alt="LinkedIn">
+                </a>
+
+                <!-- TikTok -->
+                <a href="#">
+                    <img src="Assets/images/tiktok-svg.svg" 
+                        class="w-5 h-5 " alt="TikTok">
+                </a>
+            </div>
+        </div>
+        
+        <div>
+            <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Our Services</a></li>
+            <li><a href="#" class="hover:underline">Insights</a></li>
+            <li><a href="#" class="hover:underline">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-bold text-lg mb-4">Resources</h4>
+            <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Developments</a></li>
+            <li><a href="#" class="hover:underline">About Us</a></li>
+            <li><a href="#" class="hover:underline">Our Partners</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-bold text-lg mb-4">News & Media</h4>
+            <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Meet The Team</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h4 class="font-bold text-lg mb-4">Have any questions?</h4>
+            <a href="#" class="inline-block border-2 border-white py-3 px-6  font-semibold bg-white text-blue-950 transition-colors duration-300">
+            Talk to support now!
+            </a>
+        </div>
+        </div>
+        
+        <div class="mt-4 text-center text-sm">
+            <p class="inline-block bg-white text-[#012269] px-2 py-1 rounded">
+                Muthiga Suites, Block A - Suite 25 Off Thika Road, Opp. Oil Libya Plaza P.O. Box 33607-00600, Nairobi, Kenya
+            </p>
+        </div>
     
+        
+        <div class="mt-8 text-center text-xs text-gray-400">
+        <p>&copy; 2025 Copyright: Neowell Real Estate | Developed By <a href="https://quickofficepointe.co.ke" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-400">Quick office Pointe</a></p>
+        </div>
+
+    </div>
+    </footer>
+
     <!-- hero section JS -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
