@@ -36,6 +36,25 @@
     .mobile-menu {
       transition: transform 0.3s ease-in-out;
     }
+    @keyframes pulse-heart {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2.0); 
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    }
+
+    /* Apply this animation to a class */
+    .animate-pulse-heart {
+    animation: pulse-heart 1.5s infinite ease-in-out; /* 1.5 seconds, infinite, smooth timing */
+    }
   </style>
 </head>
 
@@ -270,7 +289,111 @@
     </div>
     </section>
 
+    <!-- Challenges faced -->
+    <section class="bg-gray-100 py-16 px-4">
+        <div class="container mx-auto max-w-4xl">
+            
+            <div class="bg-gray-200 rounded-lg shadow-md overflow-hidden">
+            
+            <div id="accordion-header" class="flex items-center justify-between p-6 cursor-pointer">
+                <div class="flex items-center space-x-4">
+                <img src="Assets/images/folder_closed.svg" alt="Challenges icon" class="w-8 h-8 filter brightness-200">
+                <h4 class="text-lg md:text-xl font-bold text-blue-950">Challenges faced by clients</h4>
+                </div>
+                <img src="Assets/images/arrow-down.svg" alt="Toggle arrow" id="accordion-arrow" class="w-6 h-6 transform transition-transform duration-300 animate-pulse-heart">
+            </div>
+            
+            <div id="accordion-content" class="p-6 transition-all duration-300 max-h-0 overflow-hidden bg-gray-100">
+                <div class="relative z-10">
+                <ul class="list-none space-y-4">
+                    <li class="flex items-start space-x-3">
+                    <img src="Assets/images/folder_closed_blue.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                    <p class="text-gray-700">Selecting an unsuitable real estate product for the target market.</p>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                    <img src="Assets/images/folder_closed_blue.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                    <p class="text-gray-700">Implementing marketing and pricing strategies without leveraging insights from market and feasibility research.</p>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                    <img src="Assets/images/folder_closed_blue.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                    <p class="text-gray-700">Assessing the practicality and overall potential of your investment project.</p>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                    <img src="Assets/images/folder_closed_blue.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                    <p class="text-gray-700">Pinpointing viable investment opportunities for your development endeavor.</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
     
+    <!-- expert solution -->
+    <section class="py-16 px-4 text-white">
+    <div class="container mx-auto max-w-4xl">
+        
+        <div class="rounded-lg shadow-md overflow-hidden border-2 border-white">
+        
+        <div id="Expert-accordion-header" class="flex items-center justify-between p-6 cursor-pointer bg-blue-900">
+            <div class="flex items-center space-x-4">
+            <img src="Assets/images/expert_solutions.svg" alt="Expert solutions icon" class="w-8 h-8 filter brightness-200">
+            <h4 class="text-lg md:text-xl font-bold">Our Expert Solutions</h4>
+            </div>
+            <img src="Assets/images/expert_dropdown.svg" alt="Toggle arrow" id="Expert-accordion-arrow" class="w-6 h-6 transform transition-transform duration-300 filter brightness-200 animate-pulse-heart">
+        </div>
+        
+        <div id="Expert-accordion-content" class="p-6 transition-all duration-300 max-h-0 overflow-hidden bg-blue-950">
+            <div class="relative z-10">
+            <ul class="list-none space-y-4">
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Conducting feasibility studies and market research to identify profitable investment opportunities.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Providing real estate investment appraisals to facilitate informed decision-making.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Performing consumer research tailored to specific demographics, enabling the alignment of real estate products with market needs.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Offering project cost appraisals to assist in budget planning and optimization.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Assessing concept designs for viable development and investment prospects.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Utilizing financial analysis and modeling tools to evaluate the financial viability of projects.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Creating marketing strategies and penetration plans for effective market entry.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Developing and refining real estate brand strategies to enhance market presence.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Crafting real estate pricing strategies to complement market demands and goals.</p>
+                </li>
+                <li class="flex items-start space-x-3">
+                <img src="Assets/images/expert_checkFolder.svg" alt="bullet point icon" class="mt-1 w-5 h-5 filter brightness-200">
+                <p class="text-white">Evaluating operational approaches and management methodologies for the project's operational phase.</p>
+                </li>
+            </ul>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    </section>
 
     <!-- Newsletter section -->
     <section class="bg-gray-200 py-16">
@@ -400,5 +523,33 @@
     </footer>
 
     <script src="Assets/js/drawer.js"></script>
+    <script>
+        function setupAccordion(headerId, contentId, arrowId) {
+            const header = document.getElementById(headerId);
+            const content = document.getElementById(contentId);
+            const arrow = document.getElementById(arrowId);
+
+            if (!header || !content || !arrow) {
+                console.error('One or more accordion elements not found for IDs:', headerId, contentId, arrowId);
+                return;
+            }
+
+            header.addEventListener('click', () => {
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    arrow.classList.remove('rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    arrow.classList.add('rotate-180');
+                }
+            });
+        }
+
+        // Initialize the first accordion
+        setupAccordion('accordion-header', 'accordion-content', 'accordion-arrow');
+
+        // Initialize the second accordion
+        setupAccordion('Expert-accordion-header', 'Expert-accordion-content', 'Expert-accordion-arrow');
+    </script>
 </body>
 </html>
